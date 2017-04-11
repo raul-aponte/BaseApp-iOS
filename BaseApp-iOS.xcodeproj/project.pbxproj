@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E893F71228DF5CDDEC123B0 /* Pods_BaseApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A55BBD8A00BB493884CE9 /* Pods_BaseApp_iOS.framework */; };
 		1B4D95411E9D1FE800C17A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D95401E9D1FE800C17A24 /* AppDelegate.swift */; };
-		1B4D95431E9D1FE800C17A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D95421E9D1FE800C17A24 /* ViewController.swift */; };
-		1B4D95461E9D1FE800C17A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D95441E9D1FE800C17A24 /* Main.storyboard */; };
 		1B4D95481E9D1FE800C17A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D95471E9D1FE800C17A24 /* Assets.xcassets */; };
 		1B4D954B1E9D1FE800C17A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D95491E9D1FE800C17A24 /* LaunchScreen.storyboard */; };
 		1B4D95591E9D275500C17A24 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D95581E9D275500C17A24 /* BaseViewController.swift */; };
@@ -29,8 +27,10 @@
 		1B4D95771E9D3D8000C17A24 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D95761E9D3D8000C17A24 /* LoginService.swift */; };
 		1B4D957A1E9D407100C17A24 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D95791E9D407100C17A24 /* Alerts.swift */; };
 		1B4D957E1E9D4D2200C17A24 /* SplashVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D957D1E9D4D2200C17A24 /* SplashVideoController.swift */; };
-		1B4D95861E9D587A00C17A24 /* BaseApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D95851E9D587A00C17A24 /* BaseApp_iOSTests.swift */; };
 		1B4D958E1E9D5A5500C17A24 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D958D1E9D5A5500C17A24 /* LoginPresenterTests.swift */; };
+		1B4D95901E9D85A700C17A24 /* AccessTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D958F1E9D85A700C17A24 /* AccessTokenFactory.swift */; };
+		1B4D95921E9D861800C17A24 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D95911E9D861800C17A24 /* ApiError.swift */; };
+		1B4D95961E9D8C4400C17A24 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D95951E9D8C4400C17A24 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,6 @@
 /* Begin PBXFileReference section */
 		1B4D953D1E9D1FE800C17A24 /* BaseApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4D95401E9D1FE800C17A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B4D95421E9D1FE800C17A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B4D95451E9D1FE800C17A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B4D95471E9D1FE800C17A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4D954A1E9D1FE800C17A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4D954C1E9D1FE800C17A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,9 +66,11 @@
 		1B4D95791E9D407100C17A24 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		1B4D957D1E9D4D2200C17A24 /* SplashVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVideoController.swift; sourceTree = "<group>"; };
 		1B4D95831E9D587A00C17A24 /* BaseApp-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BaseApp-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B4D95851E9D587A00C17A24 /* BaseApp_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApp_iOSTests.swift; sourceTree = "<group>"; };
 		1B4D95871E9D587A00C17A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4D958D1E9D5A5500C17A24 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		1B4D958F1E9D85A700C17A24 /* AccessTokenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenFactory.swift; sourceTree = "<group>"; };
+		1B4D95911E9D861800C17A24 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		1B4D95951E9D8C4400C17A24 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3A3A55BBD8A00BB493884CE9 /* Pods_BaseApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD5C834EF38BF84C2E53521 /* Pods-BaseApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseApp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseApp-iOS/Pods-BaseApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C9AC98210E4EB6BA3AF53580 /* Pods-BaseApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseApp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseApp-iOS/Pods-BaseApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,13 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				1B4D95401E9D1FE800C17A24 /* AppDelegate.swift */,
-				1B4D95551E9D24BF00C17A24 /* Config */,
 				1B4D95491E9D1FE800C17A24 /* LaunchScreen.storyboard */,
-				1B4D95441E9D1FE800C17A24 /* Main.storyboard */,
+				1B4D95551E9D24BF00C17A24 /* Config */,
 				1B4D95521E9D249700C17A24 /* Models */,
 				1B4D95531E9D24A500C17A24 /* Network */,
 				1B4D95561E9D24E600C17A24 /* Res */,
-				1B4D95421E9D1FE800C17A24 /* ViewController.swift */,
 				1B4D95541E9D24B000C17A24 /* Views */,
 			);
 			path = "BaseApp-iOS";
@@ -135,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				1B4D955C1E9D27ED00C17A24 /* AccessToken.swift */,
+				1B4D95911E9D861800C17A24 /* ApiError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				1B4D955E1E9D284800C17A24 /* ApiClient.swift */,
+				1B4D958F1E9D85A700C17A24 /* AccessTokenFactory.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -167,6 +167,7 @@
 				1B4D95621E9D2B2900C17A24 /* Colors.swift */,
 				1B4D95671E9D2EEF00C17A24 /* Application.plist */,
 				1B4D956B1E9D306600C17A24 /* Initializer.swift */,
+				1B4D95951E9D8C4400C17A24 /* Localizable.strings */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -219,7 +220,6 @@
 		1B4D95841E9D587A00C17A24 /* BaseApp-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				1B4D95851E9D587A00C17A24 /* BaseApp_iOSTests.swift */,
 				1B4D95871E9D587A00C17A24 /* Info.plist */,
 				1B4D958D1E9D5A5500C17A24 /* LoginPresenterTests.swift */,
 			);
@@ -332,10 +332,10 @@
 				1B4D95681E9D2EEF00C17A24 /* Application.plist in Resources */,
 				1B4D95661E9D2E1000C17A24 /* splash.mp4 in Resources */,
 				1B4D954B1E9D1FE800C17A24 /* LaunchScreen.storyboard in Resources */,
+				1B4D95961E9D8C4400C17A24 /* Localizable.strings in Resources */,
 				1B4D95721E9D378600C17A24 /* LoginController.xib in Resources */,
 				1B4D95481E9D1FE800C17A24 /* Assets.xcassets in Resources */,
 				1B4D956A1E9D2FF100C17A24 /* Application-example.plist in Resources */,
-				1B4D95461E9D1FE800C17A24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +402,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4D956C1E9D306600C17A24 /* Initializer.swift in Sources */,
-				1B4D95431E9D1FE800C17A24 /* ViewController.swift in Sources */,
 				1B4D95411E9D1FE800C17A24 /* AppDelegate.swift in Sources */,
 				1B4D956E1E9D372800C17A24 /* LoginPresenter.swift in Sources */,
 				1B4D957E1E9D4D2200C17A24 /* SplashVideoController.swift in Sources */,
@@ -410,9 +409,11 @@
 				1B4D95631E9D2B2900C17A24 /* Colors.swift in Sources */,
 				1B4D95611E9D28A600C17A24 /* BaseView.swift in Sources */,
 				1B4D95771E9D3D8000C17A24 /* LoginService.swift in Sources */,
+				1B4D95901E9D85A700C17A24 /* AccessTokenFactory.swift in Sources */,
 				1B4D957A1E9D407100C17A24 /* Alerts.swift in Sources */,
 				1B4D955D1E9D27ED00C17A24 /* AccessToken.swift in Sources */,
 				1B4D955F1E9D284800C17A24 /* ApiClient.swift in Sources */,
+				1B4D95921E9D861800C17A24 /* ApiError.swift in Sources */,
 				1B4D95711E9D378600C17A24 /* LoginController.swift in Sources */,
 				1B4D95741E9D3B2900C17A24 /* BasePresenter.swift in Sources */,
 			);
@@ -423,7 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4D958E1E9D5A5500C17A24 /* LoginPresenterTests.swift in Sources */,
-				1B4D95861E9D587A00C17A24 /* BaseApp_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,14 +438,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1B4D95441E9D1FE800C17A24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B4D95451E9D1FE800C17A24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B4D95491E9D1FE800C17A24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
