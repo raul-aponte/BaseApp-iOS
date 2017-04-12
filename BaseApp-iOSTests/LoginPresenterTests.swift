@@ -24,30 +24,41 @@ class LoginPresenterTests: XCTestCase {
   
   func testLoginSuccess() {
     presenter?.login(user: LoginPresenterTests.validUser, password: LoginPresenterTests.validPass)
-    
-    XCTAssertTrue(service.loginSuccess, "Login Failed")
+    XCTAssertTrue(view.loginSuccess, "Login Failed")
+  }
+  func testLoginFail() {
+    presenter?.login(user: "invalid@user.com", password: "invalidPass")
+    XCTAssertFalse(view.loginSuccess, "Login Success (must fail)")
   }
 }
 
 class LoginViewMock: LoginView {
+  var userErrorMessage: String?
+  var passErrorMessage: String?
+  var loginSuccess = false
+  var errorMessage: String?
+  
   func userError(message: String) {
+    userErrorMessage = message
   }
   func passwordError(message: String) {
+    passErrorMessage = message
   }
   func loginScuceeded() {
+    loginSuccess = true
   }
-  
+  // MARK: BaseView
   func showProgress() {
   }
   func hideProgress() {
   }
   func showError(message: String) {
+    errorMessage = message
   }
 }
 class LoginServiceMock: LoginService {
   private var user: String
   private var pass: String
-  var loginSuccess = false
   
   init(validUser user: String, validPassword pass: String) {
     self.user = user
@@ -55,10 +66,14 @@ class LoginServiceMock: LoginService {
   }
   
   func login(user: String, password: String, onSuccess: @escaping (AccessToken) -> Void, onError: @escaping (ApiError) -> Void) {
-    if user.isEmpty {
-      
+    if self.user != user {
+      onError(ApiError())
+      return
     }
-    loginSuccess = true
+    if self.pass != password {
+      onError(ApiError())
+      return
+    }
     onSuccess(AccessToken())
   }
 }

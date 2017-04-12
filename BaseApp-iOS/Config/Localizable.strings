@@ -6,3 +6,4 @@
 */
 
 "ERROR_EMPTY_USER" = "Empty User";
+"ERROR_EMPTY_PASS" = "Empty Password";

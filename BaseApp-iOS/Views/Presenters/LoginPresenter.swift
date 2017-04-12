@@ -23,6 +23,10 @@ class LoginPresenter {
   func login(user: String, password: String) {
     if user.isEmpty {
       view?.userError(message: "ERROR_EMPTY_USER".localizedCapitalized)
+      return
+    }
+    if password.isEmpty {
+      view?.passwordError(message: "ERROR_EMPTY_PASS".localizedCapitalized)
     }
     view?.showProgress()
     service?.login(user: user, password: password, onSuccess: { token in

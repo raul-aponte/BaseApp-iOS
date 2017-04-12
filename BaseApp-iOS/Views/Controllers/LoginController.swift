@@ -43,6 +43,6 @@ extension LoginController: LoginView {
     Alerts.showAlert(context: self, message: message)
   }
   func loginScuceeded() {
-    
+    goToDashboard()
   }
 }
