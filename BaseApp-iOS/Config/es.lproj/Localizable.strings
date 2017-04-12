@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  BaseApp-iOS
+
+  Copyright © 2017 BaseCompany. All rights reserved.
+*/
+
+"ERROR_EMPTY_USER" = "Ingrese un usuario";
+"ERROR_EMPTY_PASS" = "Ingrese contraseña";
+"ERROR_MISSING_DATA" = "Ingrese los datos";

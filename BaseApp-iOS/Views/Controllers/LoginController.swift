@@ -9,7 +9,7 @@ import UIKit
 
 class LoginController: BaseViewController {
   // MARK: Properties
-  weak var presenter: LoginPresenter?
+  private var presenter: LoginPresenter?
   
   // MARK: Controls
   @IBOutlet weak var textFieldUser: UITextField!
@@ -26,6 +26,8 @@ class LoginController: BaseViewController {
   @IBAction func buttonLoginTap(_ sender: UIButton) {
     if let user = textFieldUser.text, let pass = textFieldPassword.text {
       presenter?.login(user: user, password: pass)
+    } else {
+      Alerts.showAlert(context: self, message: "ERROR_MISSING_DATA".localized)
     }
   }
   

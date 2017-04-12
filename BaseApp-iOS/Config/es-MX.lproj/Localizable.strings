@@ -5,5 +5,5 @@
   Copyright © 2017 BaseCompany. All rights reserved.
 */
 
-"ERROR_EMPTY_USER" = "Empty User";
-"ERROR_EMPTY_PASS" = "Empty Password";
+"ERROR_EMPTY_USER" = "Ingrese usuario";
+"ERROR_EMPTY_PASS" = "Ingrese contraseña";
